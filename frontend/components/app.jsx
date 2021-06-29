@@ -8,6 +8,7 @@ const App = ({ store }) => {
   return (
     <Provider store={store}>
       <>
+        <img src="../../../app/assets/images/coyote.jpg" />
         <YipFormContainer />
         <YipIndexContainer />
       </>
