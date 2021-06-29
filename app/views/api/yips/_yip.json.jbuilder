@@ -1,0 +1,1 @@
+json.extract! yip, :id, :body, :author_id

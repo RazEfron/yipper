@@ -1,0 +1,7 @@
+<% %>
+<%= render "user", user: @user, action: :show %>
+<form action="<%= user_url(@user.id) %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <button>Delete User</button>
+</form>
+<a href="<%= yips_url %>">All Yips</a>

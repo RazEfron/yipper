@@ -1,0 +1,9 @@
+<h1>New Yip</h1>
+
+<form action="<%= yips_url %>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="body">Body:
+        <input type="text" name="yip[body]" id="body">
+    </label>
+    <button>Create Yip!</button>
+</form>

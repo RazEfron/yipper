@@ -1,0 +1,18 @@
+<h1>All the yips!</h1>
+
+<ul>
+  <% @yips.each do |yip| %>
+    <li>
+      <div>
+        <%= yip.body %> - 
+        <a href="<%= user_url(yip.author)%>">
+          <%= yip.author.username %>
+        </a>
+      </div>
+      <div>
+        Posted at: <%= yip.created_at.to_formatted_s(:rfc822).slice(0, 25) %>
+      </div>
+      <div>Likes: <%= yip.num_likes %></div>
+    </li>
+  <% end %>
+</ul>

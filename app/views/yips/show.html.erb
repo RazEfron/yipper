@@ -1,0 +1,8 @@
+<h1>One Single Yip</h1>
+<p><%= @yip.body %></p>
+
+<form action="<%= yip_url(@yip) %>" method="post">
+    <%= auth_token %>
+    <input type="hidden" name="_method" value="delete">
+    <button>Delete this yip</button>
+</form>

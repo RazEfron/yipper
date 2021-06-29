@@ -1,0 +1,8 @@
+<a href="<%= yips_url %>">All Yips</a>
+<ul>
+    <% @users.each do |user| %>
+        <li>
+            <%= render "user", user: user, action: :index %>
+        </li>
+    <% end %>
+</ul>
